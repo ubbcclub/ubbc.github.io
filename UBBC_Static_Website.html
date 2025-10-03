@@ -1,0 +1,113 @@
+<!--
+UBBC Club - Static Website Starter
+Files included below:
+  - index.html
+  - style.css
+  - README.md (deploy instructions for GitHub Pages)
+
+Copy each file into your repo root (or use as a template). Follow README to deploy on GitHub Pages.
+-->
+
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>UBBC Club</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="UBBC Club - Community sports and events">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">UBBC Club</h1>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#team">Team</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="burger" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h2>Welcome to UBBC</h2>
+        <p>Uniting buddies for badminton, sports and community fun.</p>
+        <a class="cta" href="#events">See Upcoming Events</a>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About Us</h2>
+      <p>UBBC (University/Borough/Community Badminton Club) is a friendly club for players of all levels. We organise weekly practice, tournaments, and social gatherings.</p>
+    </section>
+
+    <section id="events" class="container section">
+      <h2>Upcoming Events</h2>
+      <ul class="events-list">
+        <li>
+          <strong>Inter-college Badminton Tournament</strong>
+          <span class="meta">Sat, Nov 22, 2025 • 8:00 AM</span>
+          <p>Open doubles and singles categories. Registration closes Nov 10.</p>
+        </li>
+        <li>
+          <strong>Weekend Practice Session</strong>
+          <span class="meta">Every Sunday • 6:00 AM</span>
+          <p>Coached session for beginners & intermediate players.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="team" class="container section">
+      <h2>Our Team</h2>
+      <div class="grid">
+        <div class="card"><h3>Priya</h3><p>President</p></div>
+        <div class="card"><h3>Rahul</h3><p>Coach</p></div>
+        <div class="card"><h3>Asha</h3><p>Events</p></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="container section">
+      <h2>Gallery</h2>
+      <p>Add images in an <code>/images</code> folder and update markup below with real filenames.</p>
+      <div class="gallery">
+        <div class="photo">Placeholder Image</div>
+        <div class="photo">Placeholder Image</div>
+        <div class="photo">Placeholder Image</div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:contact@ubbcclub.org">contact@ubbcclub.org</a></p>
+      <p>Or join our WhatsApp group: <em>link here</em></p>
+      <!-- Optional simple contact form (static) - will open mail client -->
+      <form class="contact-form" action="mailto:contact@ubbcclub.org" method="post" enctype="text/plain">
+        <label>Name <input type="text" name="name"></label>
+        <label>Email <input type="email" name="email"></label>
+        <label>Message <textarea name="message"></textarea></label>
+        <button type="submit">Send (opens email)</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 UBBC Club — Built with ❤️</p>
+      <p class="small">Hosted on GitHub Pages. Source: <a href="#">github.com/your-username/ubbc-club</a></p>
+    </div>
+  </footer>
+
+<script>
+// small script: toggle nav on mobile
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.main-nav');
+burger && burger.addEventListener('click', () => nav.classList.toggle('open'));
+</script>
+</body>
+</html>
